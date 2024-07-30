@@ -45,7 +45,8 @@ export class Coin {
   }
 
   updateScore() {
-    this.score += this.tap;
+    this.score < 10000 ? this.score += this.tap : this.score = 0;
+
     this.setScore();
     this.showScore();
     this.updateLevel();
