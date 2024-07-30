@@ -1,0 +1,8 @@
+{
+  "name": "lemur-land-coin",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "node /src/scripts/app.js"
+  }
+}

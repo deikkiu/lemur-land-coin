@@ -4,21 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" type="image/png" href="./assets/coin.png" />
     <link rel="stylesheet" href="./style.css" />
 
     <title>Lemur Land Coin</title>
   </head>
   <body>
     <div class="game">
-      <div class="header"></div>
+      <div class="header">
+        <div class="header__block">
+          <div class="header__title header__title-tap">Прибыль за тап</div>
+          <div class="header__score">
+            <img width="20" height="20" src="./assets/coin.png" alt="Coin" />
+            <span class="header__tap"></span>
+          </div>
+        </div>
+        <div class="header__block">
+          <div class="header__title header__title-up">Монет для апа</div>
+          <div class="header__score">
+            <span class="header__up"></span>
+          </div>
+        </div>
+        <div class="header__block">
+          <div class="header__title header__title-hour">Прибыль за час</div>
+          <div class="header__score">
+            <img width="20" height="20" src="./assets/coin.png" alt="Coin" />
+            <span class="header__hour"></span>
+          </div>
+        </div>
+      </div>
 
-      <div class="score"></div>
+      <div class="score">
+        <img width="60" height="60" src="./assets/coin.png" alt="Coin" />
+        <span class="score__coin"></span>
+      </div>
 
-      <div class="level"></div>
+      <div class="level">
+        <div class="level__info">
+          <div class="level__info-name"></div>
+          <div class="level__info-levels"></div>
+        </div>
+        <div class="level__progress">
+          <div class="level__progress-bg"></div>
+          <div class="level__progress-line"></div>
+        </div>
+      </div>
 
-      <div class="coin"></div>
+      <div class="coin">
+        <div class="coin__bg"></div>
+        <img src="./assets/logo.png" alt="Lemur" />
+      </div>
     </div>
 
-    <script src="./scripts/app.js" defer></script>
+    <script src="./scripts/app.js" type="module" defer></script>
   </body>
 </html>
